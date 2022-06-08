@@ -100,22 +100,22 @@ public class BaseTest {
     }
     public static final String testDataExcelFileName = "testdata.xlsx";
 
-    public String ORG_USERNAME = "automation@succraft.com";
-    public String ORG_PASSWORD = "Welcome2022";
-    public String ORG_URL = "https://login.salesforce.com/";
-    public String SFDX = "/home/mihailklimovich/sfdx/bin/sfdx";
-    public String SFDX_AUTH_URL = "force://platformcli::5Aep861yNl8cSWS3xX63jHZ.ngSZAmvp8hJceBHx79D2aqPD4WR3pO8sMjoj0uxjw1S6qaVWF05snA0EnPy6PNm@thautomation-dev-ed.my.salesforce.com";
-    public String ADMIN_USERNAME = "r@thautomation.sf";
-    public String ADMIN_PASSWORD = "Welcome1508";
-    public String ADMIN_AUTH_URL = "force://platformcli::5Aep861yNl8cSWS3xX63jHZ.ngSZAmvp8hJceBHx79D2aqPD4WR3pO8sMjoj0uxjw1S6qaVWF05snA0EnPy6PNm@thautomation-dev-ed.my.salesforce.com";
-    // public String ORG_USERNAME = System.getenv("JAVAUSERNAME");
-    // public String ORG_PASSWORD = System.getenv("JAVAPASSWORD");
-    // public String ORG_URL = System.getenv("SF_URL");
-    // public String SFDX = System.getenv("SFDX");
-    // public String SFDX_AUTH_URL = System.getenv("AUTH_URL");
-    // public String ADMIN_USERNAME = System.getenv("ADMINUSERNAME");
-    // public String ADMIN_PASSWORD = System.getenv("ADMINPASSWORD");
-    // public String ADMIN_AUTH_URL = System.getenv("ADMIN_AUTH_URL");
+//    public String ORG_USERNAME = "qa-tb-443@succraft.com";
+//    public String ORG_PASSWORD = "Welcome2022";
+//    public String ORG_URL = "https://test.salesforce.com/";
+//    public String SFDX = "/home/mihailklimovich/sfdx/bin/sfdx";
+//    public String SFDX_AUTH_URL = "force://PlatformCLI::5Aep861ZNCA9b_eTjyXNrCmQJKfBRchfy6N673e1cTFwa._2.dvflrMrCgpIfGQRNuobRIQoPvJbTVI.xWNCP14@business-power-7743-dev-ed.cs100.my.salesforce.com";
+//    public String ADMIN_USERNAME = "qa-tb-443@succraft.com";
+//    public String ADMIN_PASSWORD = "Welcome2022";
+//    public String ADMIN_AUTH_URL = "force://PlatformCLI::5Aep861ZNCA9b_eTjyXNrCmQJKfBRchfy6N673e1cTFwa._2.dvflrMrCgpIfGQRNuobRIQoPvJbTVI.xWNCP14@business-power-7743-dev-ed.cs100.my.salesforce.com";
+     public String ORG_USERNAME = System.getenv("JAVAUSERNAME");
+     public String ORG_PASSWORD = System.getenv("JAVAPASSWORD");
+     public String ORG_URL = System.getenv("SF_URL");
+     public String SFDX = System.getenv("SFDX");
+     public String SFDX_AUTH_URL = System.getenv("AUTH_URL");
+     public String ADMIN_USERNAME = System.getenv("ADMINUSERNAME");
+     public String ADMIN_PASSWORD = System.getenv("ADMINPASSWORD");
+     public String ADMIN_AUTH_URL = System.getenv("ADMIN_AUTH_URL");
 
 
     final protected String thynkPackDevOrg = "https://thynkpack-dev-ed.my.salesforce.com/";
@@ -232,16 +232,12 @@ public class BaseTest {
         functionSheetDay = new FunctionSheetDay(driver);
     }
 
-//     @AfterClass
-//     public void teardown(){
-//         driver.close();
-//         driver.quit();
-//         if (driver != null) {
-//             driver = null;
-//         }
-//    }
-
-
-
-
+     @AfterClass
+     public void teardown(){
+         driver.close();
+         driver.quit();
+         if (driver != null) {
+             driver = null;
+         }
+    }
 }
