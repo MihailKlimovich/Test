@@ -1,0 +1,2 @@
+  thn.BatchCreateOrders brs = new thn.BatchCreateOrders();
+  Database.executeBatch(brs, 1);

@@ -1,0 +1,11 @@
+/*-----Loading Account---------------------------------------------------------------------------------------------*/
+
+
+
+	List<Account> accounts = new  List<Account>();
+    accounts.add(new Account(Name = 'First Test Account'));
+    accounts.add(new Account(Name = 'Test Agent', thn__Type__c = 'Agent'));
+    accounts.add(new Account(Name = 'Test Company', thn__Type__c = 'Company'));
+    try {insert accounts;
+    System.debug('Insert Accounts - Done');
+    } catch (DmlException e)  {System.debug('Error');}
