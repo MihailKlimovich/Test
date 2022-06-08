@@ -15,7 +15,6 @@ import pageObject.SfdxCommand;
 import utils.Listeners.TestListener;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -36,12 +35,8 @@ public class Complimentary extends BaseTest {
         options.addArguments("user-data-dir=/tmp/temp_profile");
         options.addArguments(" --whitelisted-ips=\"\"");
         options.addArguments("--headless", "window-size=1920,1024", "--no-sandbox");
-        options.addArguments("start-maximized");
-        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-        options.setExperimentalOption("useAutomationExtension", false);
         //options.setHeadless(true);
         driver = new ChromeDriver(options);
-        driver.get("https://www.google.com/");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
