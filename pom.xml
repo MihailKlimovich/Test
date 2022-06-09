@@ -165,7 +165,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>TestNG4.xml</suiteXmlFile>
+                        <suiteXmlFile>${TestNG4}</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>
