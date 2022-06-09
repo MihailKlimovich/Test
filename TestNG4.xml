@@ -8,7 +8,11 @@
     </listeners>
     <test name="TB-277: Total tax is not calculated correctly on one Quote.">
         <classes>
-            <class name="tests.TB.TotalTaxIsNotCalculatedCorrectlyOnOneQuote"/>
+            <class name="tests.TB.TotalTaxIsNotCalculatedCorrectlyOnOneQuote">
+                <methods>
+                    <include name="case1" />
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
