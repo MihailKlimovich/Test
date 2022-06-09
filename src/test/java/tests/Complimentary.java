@@ -15,6 +15,7 @@ import pageObject.SfdxCommand;
 import utils.Listeners.TestListener;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -34,9 +35,10 @@ public class Complimentary extends BaseTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("user-data-dir=/tmp/temp_profile");
         options.addArguments(" --whitelisted-ips=\"\"");
-        options.addArguments("headless", "window-size=1920,1024", "no-sandbox");
+        options.addArguments("--headless", "window-size=1920,1024", "--no-sandbox");
         //options.setHeadless(true);
         driver = new ChromeDriver(options);
+        driver.get("http://google.com");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
