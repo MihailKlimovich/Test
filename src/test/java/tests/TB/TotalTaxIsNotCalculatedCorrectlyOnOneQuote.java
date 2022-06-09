@@ -10,10 +10,11 @@ import pageObject.JsonParser2;
 import tests.BaseTest;
 import utils.Annotations.Xray;
 import utils.Listeners.TestListener;
+import utils.Listeners.XrayListener;
 
 import java.io.IOException;
 import java.util.List;
-@Listeners({TestListener.class})
+@Listeners({TestListener.class, XrayListener.class})
 public class TotalTaxIsNotCalculatedCorrectlyOnOneQuote extends BaseTest {
 
     @Test(priority = 1, description = "Create a MYCE Quote. Instantiate a Quote Package, Quote products (Subtotals" +
