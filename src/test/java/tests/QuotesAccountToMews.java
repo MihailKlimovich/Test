@@ -15,8 +15,6 @@ import java.io.IOException;
 @Listeners({TestListener.class})
 
 public class QuotesAccountToMews extends BaseTest {
-
-
     @Test(priority = 1, description = "1. Create Myce Quote, 2. Specify Agent, make sure agent.mews_id == null," +
             " agent.hotel != quote.hotel, 3. Update Quote’s stage to stage defined in ‘Guest Creation Stage’ field of" +
             " the ‘Default Agile Values’ mdt. Result: agent.hotel__c is updated to quote.hotel__c and" +

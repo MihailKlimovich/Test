@@ -3,7 +3,7 @@
 <suite name="Salesforce Test Suite" >
     <listeners>
        <listener class-name="utils.Listeners.TestListener"/>
-<!--        <listener class-name="utils.Listeners.AnnotationTransformer"/>-->
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
         <listener class-name="utils.Listeners.XrayListener"/>
     </listeners>
     <test name="TB-277: Total tax is not calculated correctly on one Quote.">
