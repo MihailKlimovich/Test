@@ -34,10 +34,8 @@ public class Complimentary extends BaseTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("user-data-dir=/tmp/temp_profile");
         options.addArguments(" --whitelisted-ips=\"\"");
-        //options.addArguments("--headless", "window-size=1920,1024", "--no-sandbox");
+        options.addArguments("--headless", "window-size=1920,1024", "--no-sandbox");
         //options.setHeadless(true);
-        options.addArguments("--headless");
-        options.addArguments("--no-sandbox");
         driver = new ChromeDriver(options);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
@@ -161,6 +159,7 @@ public class Complimentary extends BaseTest {
         String winesID= JsonParser2.getFieldValue(winesRecord.toString(), "Id");
         StringBuilder quoteRecord = myceQuotes.getQuoteSFDX(SFDX, "Name='MyceQuoteComplimentary1'", ORG_USERNAME);
         String myceQuoteID= JsonParser2.getFieldValue(quoteRecord.toString(), "Id");
+        System.out.println("myceQuoteID ===" + myceQuoteID);
         String myceQuoteTotalAmmountInclTax= JsonParser2.
                 getFieldValue(quoteRecord.toString(), "thn__Total_Amount_incl_Tax__c");
         StringBuilder quotePackageRecord = quoteMeetingPackages.
