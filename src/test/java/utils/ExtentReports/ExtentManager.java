@@ -9,6 +9,7 @@ public class ExtentManager {
     private static ExtentReports extent;
 
     public synchronized static ExtentReports getReporter(){
+        System.out.println("In reporter");
         if(extent == null){
             //Set HTML reporting file location
             String workingDir = System.getProperty("user.dir");
