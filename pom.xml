@@ -32,6 +32,7 @@
 
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
         <!--End Xray Properties -->
+        <aspectj.version>1.8.10</aspectj.version>
 
     </properties>
     <dependencies>
@@ -167,6 +168,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>TestNG4.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                     <properties>
                         <property>
                             <name>reporter</name>
@@ -174,10 +178,16 @@
                         </property>
                     </properties>
                 </configuration>
+                <dependencies>
+                <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjweaver</artifactId>
+                    <version>${aspectj.version}</version>
+                </dependency>
+            </dependencies>
             </plugin>
         </plugins>
     </build>
-
     <repositories>
         <repository>
             <id>xpandit</id>
