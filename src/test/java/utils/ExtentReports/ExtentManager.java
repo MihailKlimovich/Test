@@ -15,6 +15,7 @@ public class ExtentManager {
             String workingDir = System.getProperty("user.dir");
             extent = new ExtentReports(workingDir+"\\ExtentReports\\ExtentReportResults.html", true);
         }
+        System.out.println("extent === " + extent);
         return extent;
     }
 }
