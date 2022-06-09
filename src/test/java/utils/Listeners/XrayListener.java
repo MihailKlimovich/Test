@@ -1,21 +1,13 @@
-package utils.Annotations;
-
-
-import java.lang.reflect.Method;
+package utils.Listeners;
 
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
-import static java.lang.System.out;
-import static java.lang.System.err;
-
+import utils.Annotations.Xray;
 public class XrayListener implements IInvokedMethodListener, ITestListener {
-
     boolean testSuccess = true;
-
 
     /* (non-Javadoc)
      * @see org.testng.IInvokedMethodListener#beforeInvocation(org.testng.IInvokedMethod, org.testng.ITestResult)
