@@ -27,17 +27,11 @@ public class TotalTaxIsNotCalculatedCorrectlyOnOneQuote extends BaseTest {
     @Story("TB-277: Total tax is not calculated correctly on one Quote.")
     @Xray(requirement = "TEST-1234", test = "TEST-1", labels = "core addition")
     public void case1() throws InterruptedException, IOException {
-        System.out.println("1");
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
-        System.out.println("2");
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='TotalTaxIsNotCalculatedCorrectlyOnOneQuoteAutoTest'", ORG_USERNAME);
-        System.out.println("3");
         product.deleteProductSFDX(SFDX, "Name='ComboProductAutoTest", ORG_USERNAME);
-        System.out.println("4");
         packages.deletePackageSFDX(SFDX, "Name='TB277AutoTest", ORG_USERNAME);
-        System.out.println("5");
         StringBuilder hotelRecord = hotel.getHotelSFDX(SFDX, "thn__Unique_Id__c='Demo'", ORG_USERNAME);
-        System.out.println("6");
         String propertyID = JsonParser2.getFieldValue(hotelRecord.toString(), "Id");
         StringBuilder meetingFullDayRecord = product.getProductSFDX(SFDX, "Name='MEETING FULL DAY'", ORG_USERNAME);
         String meetingFullDayID = JsonParser2.getFieldValue(meetingFullDayRecord.toString(), "Id");
