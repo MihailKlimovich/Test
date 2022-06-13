@@ -24,7 +24,7 @@ public class TotalTaxIsNotCalculatedCorrectlyOnOneQuote extends BaseTest {
             " Total Amount incl. Tax fields on MYCE Quote are calculated correctly. The optional product in not" +
             " included in the calculations.")
     @Severity(SeverityLevel.NORMAL)
-    @Story("TB-277: Total tax is not calculated correctly on one Quote.")
+    @Story("TTP-310: Total tax is not calculated correctly on one Quote.")
     @Xray(requirement = "TTP-310", test = "TTP-310", labels = "core addition")
     public void case1() throws InterruptedException, IOException {
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
