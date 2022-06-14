@@ -22,7 +22,7 @@
         <xray.username>admin</xray.username>
         <xray.password>123qwe</xray.password>-->
 
-        <xray.projectKey>TTP</xray.projectKey>
+        <xray.projectKey>THYNK Tests</xray.projectKey>
 
 <!--        <xray.testExecKey>TES-5</xray.testExecKey>-->
 <!--        <xray.testPlanKey></xray.testPlanKey>-->
