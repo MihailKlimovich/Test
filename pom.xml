@@ -22,12 +22,12 @@
         <xray.username>admin</xray.username>
         <xray.password>123qwe</xray.password>-->
 
-        <xray.projectKey>TestXray</xray.projectKey>
+<!--        <xray.projectKey>TestXray</xray.projectKey>-->
 
-        <xray.testExecKey>TES-5</xray.testExecKey>
-        <xray.testPlanKey></xray.testPlanKey>
-        <xray.testEnvironments></xray.testEnvironments>
-        <xray.revision></xray.revision>
+<!--        <xray.testExecKey>TES-5</xray.testExecKey>-->
+<!--        <xray.testPlanKey></xray.testPlanKey>-->
+<!--        <xray.testEnvironments></xray.testEnvironments>-->
+<!--        <xray.revision></xray.revision>-->
 
 
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
