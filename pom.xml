@@ -23,12 +23,12 @@
         <xray.password>123qwe</xray.password>-->
 
         <xray.projectKey>THYNK Tests</xray.projectKey>
-        <!--
-        <xray.testExecKey></xray.testExecKey>
+
+        <xray.testExecKey>TTP-310</xray.testExecKey>
         <xray.testPlanKey></xray.testPlanKey>
         <xray.testEnvironments></xray.testEnvironments>
         <xray.revision></xray.revision>
-        -->
+
 
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
         <!--End Xray Properties -->
