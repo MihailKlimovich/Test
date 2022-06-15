@@ -27,7 +27,7 @@ public class TotalTaxIsNotCalculatedCorrectlyOnOneQuote extends BaseTest {
             " included in the calculations.")
 //    @Severity(SeverityLevel.NORMAL)
 //    @Story("TTP-310: Total tax is not calculated correctly on one Quote.")
-    @Xray
+    @Xray(requirement = "TTP")
     public void case1() throws InterruptedException, IOException {
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='TotalTaxIsNotCalculatedCorrectlyOnOneQuoteAutoTest'", ORG_USERNAME);
