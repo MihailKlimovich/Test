@@ -12,5 +12,7 @@ public @interface Xray{
 
     String labels() default "";
 
+    String description() default "";
+
 }
 
