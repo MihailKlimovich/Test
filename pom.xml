@@ -24,10 +24,10 @@
 
         <xray.projectKey>TTP</xray.projectKey>
 
-        <xray.testExecKey></xray.testExecKey>
-        <xray.testPlanKey></xray.testPlanKey>
-        <xray.testEnvironments></xray.testEnvironments>
-        <xray.revision></xray.revision>
+<!--        <xray.testExecKey></xray.testExecKey>-->
+<!--        <xray.testPlanKey></xray.testPlanKey>-->
+<!--        <xray.testEnvironments></xray.testEnvironments>-->
+<!--        <xray.revision></xray.revision>-->
 
 
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
