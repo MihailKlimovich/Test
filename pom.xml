@@ -17,12 +17,12 @@
         <!--XRay Properties -->
 
         <!--IN PROFILE ~.m2/settings.xml-->
-        <!--<xray.jiraURL></xray.jiraURL>
-        <xray.resultsFormat>JUNIT</xray.resultsFormat>
-        <xray.username>admin</xray.username>
+        <xray.jiraURL>https://thynk.atlassian.net/</xray.jiraURL>
+        <xray.resultsFormat>XRAY</xray.resultsFormat>
+        <!--<xray.username>admin</xray.username>
         <xray.password>123qwe</xray.password>-->
 
-        <xray.projectKey>TES</xray.projectKey>
+        <xray.projectKey>TTP</xray.projectKey>
 
         <xray.testExecKey></xray.testExecKey>
         <xray.testPlanKey></xray.testPlanKey>
