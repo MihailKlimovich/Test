@@ -24,7 +24,7 @@
 
         <xray.projectKey>TES</xray.projectKey>
 
-        <xray.testExecKey>TES-5</xray.testExecKey>
+        <xray.testExecKey></xray.testExecKey>
         <xray.testPlanKey></xray.testPlanKey>
         <xray.testEnvironments></xray.testEnvironments>
         <xray.revision></xray.revision>
