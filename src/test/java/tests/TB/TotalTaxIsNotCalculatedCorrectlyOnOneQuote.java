@@ -1,6 +1,7 @@
 package tests.TB;
 
 
+import com.xpandit.testng.annotations.Xray;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
@@ -10,7 +11,7 @@ import org.testng.annotations.Test;
 import pageObject.JsonParser2;
 import tests.BaseTest;
 
-import utils.Annotations.Xray;
+
 import utils.Listeners.TestListener;
 import utils.Listeners.XrayListener;
 
@@ -27,7 +28,7 @@ public class TotalTaxIsNotCalculatedCorrectlyOnOneQuote extends BaseTest {
             " included in the calculations.")
 //    @Severity(SeverityLevel.NORMAL)
 //    @Story("TTP-310: Total tax is not calculated correctly on one Quote.")
-    @Xray(requirement = "TTP")
+    @Xray
     public void case1() throws InterruptedException, IOException {
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='TotalTaxIsNotCalculatedCorrectlyOnOneQuoteAutoTest'", ORG_USERNAME);
