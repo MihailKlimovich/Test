@@ -17,8 +17,8 @@
         <!--XRay Properties -->
 
         <!--IN PROFILE ~.m2/settings.xml-->
-        <xray.jiraURL>https://thynk.atlassian.net/</xray.jiraURL>
-        <xray.resultsFormat>TESTNG</xray.resultsFormat>
+<!--        <xray.jiraURL>https://thynk.atlassian.net/</xray.jiraURL>-->
+<!--        <xray.resultsFormat>TESTNG</xray.resultsFormat>-->
         <!--<xray.username>admin</xray.username>
         <xray.password>123qwe</xray.password>-->
 
