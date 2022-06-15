@@ -13,23 +13,6 @@
 
 
     <properties>
-
-        <!--XRay Properties -->
-
-        <!--IN PROFILE ~.m2/settings.xml-->
-<!--        <xray.jiraURL>http://localhost:8080</xray.jiraURL>-->
-<!--        <xray.resultsFormat>TESTNG</xray.resultsFormat>-->
-        <!--<xray.username>admin</xray.username>
-        <xray.password>123qwe</xray.password>-->
-
-<!--        <xray.projectKey>TTP</xray.projectKey>-->
-
-<!--        <xray.testExecKey></xray.testExecKey>-->
-<!--        <xray.testPlanKey></xray.testPlanKey>-->
-<!--        <xray.testEnvironments></xray.testEnvironments>-->
-<!--        <xray.revision></xray.revision>-->
-
-
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
         <!--End Xray Properties -->
         <aspectj.version>1.8.10</aspectj.version>
