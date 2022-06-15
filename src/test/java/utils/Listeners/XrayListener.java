@@ -1,11 +1,11 @@
 package utils.Listeners;
 
-import com.xpandit.testng.annotations.Xray;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import utils.Annotations.Xray;
 
 public class XrayListener implements IInvokedMethodListener, ITestListener {
     boolean testSuccess = true;
