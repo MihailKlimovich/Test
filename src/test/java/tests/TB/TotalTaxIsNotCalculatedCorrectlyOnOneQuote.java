@@ -1,6 +1,6 @@
 package tests.TB;
 
-import com.xpandit.testng.annotations.Xray;
+
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import pageObject.JsonParser2;
 import tests.BaseTest;
 
+import utils.Annotations.Xray;
 import utils.Listeners.TestListener;
 import utils.Listeners.XrayListener;
 
