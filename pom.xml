@@ -24,7 +24,7 @@
 
         <xray.projectKey>TTP</xray.projectKey>
 
-        <xray.testExecKey>TTP-310</xray.testExecKey>
+        <xray.testExecKey></xray.testExecKey>
         <xray.testPlanKey></xray.testPlanKey>
         <xray.testEnvironments></xray.testEnvironments>
         <xray.revision></xray.revision>
