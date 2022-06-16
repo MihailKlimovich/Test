@@ -6,7 +6,7 @@
         <listener class-name="utils.Listeners.AnnotationTransformer"/>
         <listener class-name="utils.Listeners.XrayListener"/>
     </listeners>
-    <test name="ClearCache">
+    <test name="CloneMyceQuoteAndQHRPQuantity">
         <classes>
             <class name="tests.CloneMyceQuoteAndQHRPQuantity"/>
         </classes>
