@@ -6,13 +6,18 @@
         <listener class-name="utils.Listeners.AnnotationTransformer"/>
         <listener class-name="utils.Listeners.XrayListener"/>
     </listeners>
-    <test name="TB-277: Total tax is not calculated correctly on one Quote.">
+<!--    <test name="TB-277: Total tax is not calculated correctly on one Quote.">-->
+<!--        <classes>-->
+<!--            <class name="tests.TB.TotalTaxIsNotCalculatedCorrectlyOnOneQuote">-->
+<!--                <methods>-->
+<!--                    <include name="case1" />-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="CloneMyceQuoteAndQHRPQuantity">
         <classes>
-            <class name="tests.TB.TotalTaxIsNotCalculatedCorrectlyOnOneQuote">
-                <methods>
-                    <include name="case1" />
-                </methods>
-            </class>
+            <class name="tests.CloneMyceQuoteAndQHRPQuantity"/>
         </classes>
     </test>
 </suite>
