@@ -11,6 +11,5 @@ public @interface Xray{
     String test() default "";
 
     String labels() default "";
-
 }
 
