@@ -18,7 +18,6 @@ public class XrayListener implements IInvokedMethodListener, ITestListener {
             testResult.setAttribute("requirement", method.getTestMethod().getConstructorOrMethod().getMethod().getAnnotation(Xray.class).requirement());
             testResult.setAttribute("test", method.getTestMethod().getConstructorOrMethod().getMethod().getAnnotation(Xray.class).test());
             testResult.setAttribute("labels", method.getTestMethod().getConstructorOrMethod().getMethod().getAnnotation(Xray.class).labels());
-            testResult.setAttribute("description", method.getTestMethod().getConstructorOrMethod().getMethod().getAnnotation(Xray.class).description());
         }
     }
 
