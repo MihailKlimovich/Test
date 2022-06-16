@@ -20,7 +20,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " dates. Expected Result: Quantity of the Quote Hotel Room Prices are updated.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
-    @Xray(requirement = "TTP-310", labels = "test xray")
+    @Xray(requirement = "TTP-310", test = "TTP-337")
     public void precondition() throws InterruptedException, IOException {
         loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
@@ -72,7 +72,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " MYCE Quote = 10. QHR.Number = 10. QHRP.Quantity = 10 for all dates.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
-    @Xray(requirement = "TTP-310")
+    @Xray(requirement = "TTP-310", test = "TTP-338")
     public void case1() throws InterruptedException, IOException {
         //loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='CloneMyceQuoteAndQHRPQuantityAutoTestClone'", ORG_USERNAME);
