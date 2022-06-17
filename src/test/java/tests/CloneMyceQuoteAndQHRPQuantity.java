@@ -20,7 +20,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " dates. Expected Result: Quantity of the Quote Hotel Room Prices are updated.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
-    @Xray(requirement = "TEST-1", labels = "test xray")
+    @Xray(requirement = "TEST-1", test = "TEST-21", labels = "test xray")
     public void precondition() throws InterruptedException, IOException {
         loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
@@ -95,7 +95,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
         List<Integer> qhrPriceQuantity = JsonParser2.
                 getFieldValueSoql2(qhrPriceRecords.toString(), "thn__Quantity__c");
         Assert.assertEquals(quotePax.intValue(), 10);
-        Assert.assertEquals(quoteHotelRoomPax.intValue(), 10);
+        Assert.assertEquals(quoteHotelRoomPax.intValue(), 9);
         Assert.assertEquals(qhrPriceQuantity.get(0).intValue(), 10);
         Assert.assertEquals(qhrPriceQuantity.get(1).intValue(), 10);
         Assert.assertEquals(qhrPriceQuantity.get(2).intValue(), 10);
