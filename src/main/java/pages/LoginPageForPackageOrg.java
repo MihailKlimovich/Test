@@ -113,10 +113,6 @@ public class LoginPageForPackageOrg extends BasePage{
 
 
         public void authoriseURL(String sfdxPath, String authURL, String userName) throws IOException, InterruptedException {
-            System.out.println("sfdxPath === " + sfdxPath);
-            System.out.println("authURL === " + authURL);
-            System.out.println("userName === " + userName);
-            System.out.println("I try!!!!!!!!!!!!!!!!!!!!!!");
             File createFile = new File("./SFDX_URL.txt");
             createFile.createNewFile();
             PrintWriter pw = new PrintWriter(createFile);
