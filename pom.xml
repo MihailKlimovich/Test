@@ -8,10 +8,6 @@
     <artifactId>SCNew</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
-
-
     <properties>
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
         <!--End Xray Properties -->
