@@ -13,14 +13,13 @@ import utils.Listeners.TestListener;
 import java.io.IOException;
 import java.util.List;
 @Listeners({TestListener.class})
-@Xray
 public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
-
     @Test(priority = 1, description = "Create a MYCE Quote (today + 2 days, Departure Date = today + 6 days)." +
             " Instantiate a Quote Hotel Room. Change the Quantity of the Quote Hotel Room Prices for the created" +
             " dates. Expected Result: Quantity of the Quote Hotel Room Prices are updated.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
+    @Xray(labels = "test xray")
     public void precondition() throws InterruptedException, IOException {
         loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         loginPage.authoriseURL(SFDX, SFDX_AUTH_URL, ORG_USERNAME);
@@ -72,6 +71,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " MYCE Quote = 10. QHR.Number = 10. QHRP.Quantity = 10 for all dates.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
+    @Xray
     public void case1() throws InterruptedException, IOException {
         //loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='CloneMyceQuoteAndQHRPQuantityAutoTestClone'", ORG_USERNAME);
@@ -106,6 +106,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " on the MYCE Quote = 500. QHR.Number = 100. QHRP.Quantity = 5, 10, 100, 5.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
+    @Xray
     public void case2() throws InterruptedException, IOException {
         //loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='CloneMyceQuoteAndQHRPQuantityAutoTestClone2'", ORG_USERNAME);
@@ -140,6 +141,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " on the MYCE Quote = 600. QHR.Number = 100. QHRP.Quantity =  5, 10, 100, 5.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
+    @Xray
     public void case3() throws InterruptedException, IOException {
         //loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='CloneMyceQuoteAndQHRPQuantityAutoTestClone3'", ORG_USERNAME);
