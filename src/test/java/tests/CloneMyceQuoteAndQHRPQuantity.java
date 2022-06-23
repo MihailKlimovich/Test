@@ -142,7 +142,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
             " on the MYCE Quote = 600. QHR.Number = 100. QHRP.Quantity =  5, 10, 100, 5.")
     @Severity(SeverityLevel.NORMAL)
     @Story("THY-685: Clone Myce Quote and QHRP.Quantity.")
-    @Xray
+    @Xray(labels = "test xray")
     public void case3() throws InterruptedException, IOException {
         //loginPageForScratchOrg.logInOnScratchOrg2(driver, ORG_URL, ORG_USERNAME, ORG_PASSWORD);
         myceQuotes.deleteQuoteSFDX(SFDX, "Name='CloneMyceQuoteAndQHRPQuantityAutoTestClone3'", ORG_USERNAME);
