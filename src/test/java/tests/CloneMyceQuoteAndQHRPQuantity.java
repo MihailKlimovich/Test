@@ -165,7 +165,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
                 getFieldValueSoql2(qhrPriceRecords.toString(), "thn__Quantity__c");
         Assert.assertEquals(quotePax.intValue(), 600);
         Assert.assertEquals(quoteHotelRoomPax.intValue(), 100);
-        Assert.assertEquals(qhrPriceQuantity.get(0).intValue(), 5);
+        Assert.assertEquals(qhrPriceQuantity.get(0).intValue(), 4);
         Assert.assertEquals(qhrPriceQuantity.get(1).intValue(), 10);
         Assert.assertEquals(qhrPriceQuantity.get(2).intValue(), 100);
         Assert.assertEquals(qhrPriceQuantity.get(3).intValue(), 5);
