@@ -61,7 +61,7 @@ public class CloneMyceQuoteAndQHRPQuantity extends BaseTest{
                 ORG_USERNAME);
         List<Integer> qhrPriceQuantity = JsonParser2.
                 getFieldValueSoql2(qhrPriceRecords.toString(), "thn__Quantity__c");
-        Assert.assertEquals(qhrPriceQuantity.get(0).intValue(), 4);
+        Assert.assertEquals(qhrPriceQuantity.get(0).intValue(), 5);
         Assert.assertEquals(qhrPriceQuantity.get(1).intValue(), 10);
         Assert.assertEquals(qhrPriceQuantity.get(2).intValue(), 100);
         Assert.assertEquals(qhrPriceQuantity.get(3).intValue(), 5);
