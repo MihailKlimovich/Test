@@ -10,7 +10,7 @@
         <classes>
             <class name="tests.TB.TotalTaxIsNotCalculatedCorrectlyOnOneQuote">
                 <methods>
-                    <include name="case1" />
+                    <include name="case1"/>
                 </methods>
             </class>
         </classes>
